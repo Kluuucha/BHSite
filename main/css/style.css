@@ -59,80 +59,145 @@ font-size: 16px;
 footer {
 	color: white;
 }
+/** Zoom **/
 
 /** Efekt okien **/
 
-	.caption-style-4{
-		list-style-type: none;
-		margin: 0px;
-		padding: 0px;
-		
-	}
+#portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
 
-	.caption-style-4 li{
-		float: left;
-		padding: 0px;
-		position: relative;
-		overflow: hidden;
-	}
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
 
-	.caption-style-4 li:hover .caption{
-		opacity: 1;
-	}
+}
 
-	.caption-style-4 li:hover img{
-		opacity: 1;
-		transform: scale(1.15,1.15);
-		-webkit-transform:scale(1.15,1.15);
-		-moz-transform:scale(1.15,1.15);
-		-ms-transform:scale(1.15,1.15);
-		-o-transform:scale(1.15,1.15);
-	}
+#portfolio .portfolio-item .portfolio-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(0,224,225,.75);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
 
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
+}
 
-	.caption-style-4 img{
-		margin: 0px;
-		padding: 0px;
-		float: left;
-		z-index: 4;
-	}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+}
 
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+    margin-top: -12px;
+}
 
-	.caption-style-4 .caption{
-		cursor: pointer;
-		position: absolute;
-		opacity: 0;
-		-webkit-transition:all 0.45s ease-in-out;
-		-moz-transition:all 0.45s ease-in-out;
-		-o-transition:all 0.45s ease-in-out;
-		-ms-transition:all 0.45s ease-in-out;
-		transition:all 0.45s ease-in-out;
-	}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+    margin: 0;
+}
 
-	.caption-style-4 img{
-		-webkit-transition:all 0.25s ease-in-out;
-		-moz-transition:all 0.25s ease-in-out;
-		-o-transition:all 0.25s ease-in-out;
-		-ms-transition:all 0.25s ease-in-out;
-		transition:all 0.25s ease-in-out;
-	}
-	.caption-style-4 .blur{
-		background-color: rgba(0,0,0,0.65);
+#portfolio * {
+    z-index: 2;
+}
 
-		z-index: 5;
-		position: absolute;
-	}
+@media(min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
 
-	.caption-style-4 .caption-text h1{
+.btn-outline {
+    margin-top: 15px;
+    border: solid 2px #fff;
+    font-size: 20px;
+    color: #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
 
-		font-size: 24px;
-	}
-	.caption-style-4 .caption-text{
-		z-index: 10;
-		color: #fff;
-		position: absolute;
-		width: 400px;
-		height: 300px;
-		text-align: center;
-		top:100px;
-	}
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    border: solid 2px #fff;
+    color: #d35400;
+    background: #fff;
+}
+
+.portfolio-modal .modal-content {
+    padding: 10px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: left;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
