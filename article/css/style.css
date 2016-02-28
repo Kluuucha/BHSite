@@ -63,7 +63,7 @@ background: linear-gradient(to bottom, rgba(46,52,69,1) 0%, rgba(14,16,23,1) 100
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e3445', endColorstr='#0e1017', GradientType=0 );
 
 min-height: 80px;
-font-size: 14px;
+font-size: 15px;
 }
 
 .navbar-nav {
