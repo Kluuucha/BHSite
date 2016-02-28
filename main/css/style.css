@@ -59,7 +59,6 @@ font-size: 16px;
 footer {
 	color: white;
 }
-/** Zoom **/
 
 /** Efekt okien **/
 
@@ -84,6 +83,11 @@ footer {
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
