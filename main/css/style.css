@@ -60,6 +60,12 @@ footer {
 	color: white;
 }
 
+p[id="description"]{
+	margin-top: 5px;
+	font-family: bitstream;
+	font-size: 12px;
+}
+
 /** Efekt okien **/
 
 #portfolio .portfolio-item {
@@ -84,10 +90,7 @@ footer {
     -moz-transition: all ease .5s;
     transition: all ease .5s;
 	
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 10px;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
@@ -99,7 +102,7 @@ footer {
     top: 50%;
     width: 100%;
     height: 20px;
-    margin-top: -12px;
+	margin-top: -15px;
     text-align: left;
     font-size: 20px;
     color: #fff;
