@@ -20,7 +20,7 @@ body {
 }
 
 div[id="content"]{
-	background: #2c3e50;
+	background: rgba(44,62,80,1);
 	
 	margin-top: 25px;
 	
