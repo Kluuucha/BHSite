@@ -60,9 +60,16 @@ footer {
 	color: white;
 }
 
+p{
+	font-family: bitstream;	
+}
+
+footer p{
+	font-family: audiowide;
+}
+
 p[id="description"]{
 	margin-top: 5px;
-	font-family: bitstream;
 	font-size: 12px;
 }
 

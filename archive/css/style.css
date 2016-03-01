@@ -165,7 +165,7 @@ input[type=checkbox].css-checkbox {
 	border:0;
 }
 
-input[type=checkbox].css-checkbox + label.css-label {
+input[type=checkbox].css-checkbox + label.css-checklabel {
 	padding-left:25px;
 	height:20px; 
 	display:inline-block;
@@ -177,11 +177,11 @@ input[type=checkbox].css-checkbox + label.css-label {
 	cursor:pointer;
 }
 
-input[type=checkbox].css-checkbox:checked + label.css-label {
+input[type=checkbox].css-checkbox:checked + label.css-checklabel {
 	background-position: 0 -20px;
 }
 
-label.css-label {
+label.css-checklabel {
 	background-image:url("../img/form/checkbox.png");
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
